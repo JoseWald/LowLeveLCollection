@@ -1,0 +1,17 @@
+1-Que fait ce code?
+#La fonction compter_mot compte chaque mot dans la chaîne de 
+caracère pointé par le paramètre *str
+	-c=1 initialise le compteur de mot en 1,si on trouve
+d'autre mot,le compteur s'incremente
+	-si *str n'est pas définie,on retourne la valeur 0 au lieu 
+de retourner la valeur de 1
+	-sinon on passe à la boucle for qui se boucle jusq'à ce qu'on rencontre le '\0' qui marque la fin d'une chaîne de caractère
+
+#La fonction copier_remplacer_espace copie et remplace chaque espace du mot pointé par son paramètre
+	-n =longueur de la chaîne pointé par le paramètre *str
+	-*sortie=malloc((n+1)*sizeof(char))pour inclure '\0' dans toutes les fins des chaîne de caractère
+	-on remplace les espaces par 0 et en copie les restes
+
+#La fonction split_string qui est une fonction qui découpe chaque mot
+	-J'espère que vous allez comprendre le reste de la code :on va parcourir p et on trouve la fin d'indice de découpage si p=0 car on a déjà remplacé chaque espace par 0
+	
